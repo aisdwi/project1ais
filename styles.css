@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Azo.Sans", sans-serif;
+  font-size: 16px;
   /* background-color: rgba(245, 245, 245, 0.98); */
 }
 
@@ -39,8 +40,8 @@ body {
 
 .navbar li {
   text-transform: uppercase;
-  margin-right: 7px;
-  font-size: 0.72rem;
+  margin-right:5px;
+  font-size: 0.65rem;
   list-style-type: none;
   font-weight: 550;
 }
@@ -86,7 +87,7 @@ header {
 .regist .btn {
   border-radius: 52px;
   margin: 0 10px 0 0;
-  padding: 11px 34px;
+  padding: 11px 33px;
   color: black;
   text-decoration: none;
   /* border: 2px solid black; */
@@ -103,13 +104,14 @@ header {
 .layer1 {
   z-index: 4;
   position: absolute;
-  right: -31px;
+  right: -35px;
   object-fit: contain;
   width: 42%;
   border: none;
 }
 
 .layer2 {
+  top: 15px;
   z-index: 3;
   position: absolute;
   right: -60px;
@@ -158,31 +160,31 @@ header {
   display: flex;
   align-content: center;
   position: relative;
-  height: 750px;
+  height: 705px;
   /* top: px; */
 }
 
 .hi1 {
   z-index: 9;
   position: absolute;
-  left: 890px;
-  top: 27px;
+  left: 830px;
+  top: 25px;
   object-fit: contain;
-  height: 630px;
+  height: 600px;
 }
 
 .hi2 {
   z-index: 8;
-  top: 28px;
-  left: 1035px;
+  top: 26px;
+  left: 971px;
   position: absolute;
-  height: 630px;
+  height: 590px;
 }
 
 .hero-text {
   margin-left: 140px;
   align-content: center;
-  width: 29%;
+  width: 30%;
   margin-top: -90px;
 }
 
@@ -190,13 +192,14 @@ header {
   color: var(--font-blue);
   margin-bottom: 5px;
   font-weight: 550;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  margin-top: 5px;
+  font-size: 0.85em;
+  opacity: 0.9;
   letter-spacing: 0.5px;
 }
 
 .hero-text h1 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   margin-top: 5px;
   padding-top: 10px;
   letter-spacing: 0.4px;
@@ -215,7 +218,7 @@ header {
 
 .hero-text button {
   border-radius: 52px;
-  margin: 25px 10px 0 2px;
+  margin: 15px 10px 0 2px;
   padding: 14px 24px;
   font-size: 0.63rem;
   color: white;
@@ -236,7 +239,7 @@ header {
     background-color: rgba(245, 245, 245, 0.97);
     border-radius: 30px;
     z-index: 5;
-    width: 47%;
+    width: 48%;
     margin: auto 10px;
     display: flex;
     flex-direction: column;
@@ -278,7 +281,8 @@ header {
 }
 
 .for h1{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    /* opacity: 0.7; */
     font-weight: 550;
     margin: 8% 0 4% 0;
 }
@@ -286,9 +290,9 @@ header {
 .for p:not(.number){
     margin: 12px 20px 0 20px;
     padding: 0 20px;
-    font-size: 0.83rem;
-    font-weight: 200;
-    opacity: 0.7;
+    font-size: 0.785rem;
+    font-weight: 100;
+    opacity: 0.6;
     color: gray;
     text-align: center;
     line-height: 1.37;
@@ -310,22 +314,192 @@ header {
 }
 
 .different h1{
-    font-size: 2.35rem;
+    font-size: 2.1rem;
     font-weight: 550;
+    opacity: 0.9;
     letter-spacing: 0.5px;
     margin: 0 20px 0 20px;
-    padding: 0 0 0 40px;
+    padding: 0 29px 0 35px;
     color: white;
     width: 40%
 }
 
+
 .different p{
-    font-weight: 300;
+    font-weight: 50;
     letter-spacing: 0.5px;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     color: white;
-    opacity: 0.4;
+    opacity: 0.5;
     width: 50%;
     margin-right: 20%;
-    margin-left: 40px;
+    line-height: 1.5;
+    margin-left: 0;
+    padding: 0 0 0 20px;
+}
+
+.different p span{
+    font-weight: 700;
+    opacity: 1;
+}
+
+/* TIMELINE */
+
+.timeline{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  margin: 300px auto 0 auto;
+  width: 82%;
+  gap: 24px;
+}
+
+.timeline-heading{
+  margin-bottom: 64px;
+}
+
+.timeline-heading h4 {
+  color: #20ad60;
+  font-size: 12px;
+  margin: 0 0 4px;
+}
+
+.timeline-heading h2 {
+  color: #202127;
+  font-size: 26px;
+  margin: 0;
+}
+
+.timeline-item{
+  position: relative;
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  border-top: 2px dotted #d8d8de;
+  top: 99px;
+  left: 42px;
+  width: 84%;
+  right: 0;
+}
+
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--button-green);
+  z-index: 1;
+  top: 58px;
+  left: 0;
+}
+
+.timeline-item::after{
+  content: "";
+  top: 66px;
+  left: 2px;
+  width: 42px;
+  height: 35px;
+  position: absolute;
+  border-left: 2px dotted #d8d8de;
+  border-bottom: 2px dotted #d8d8de;
+  border-bottom-left-radius: 45px;
+  pointer-events: none;
+}
+
+.timeline-item ol{
+  /* margin-top: 100px; */
+  margin: 95px 0 0 0;
+  /* gap: 12px; */
+  padding: 0 0 0 0;
+}
+
+.timeline-item li {
+  counter-increment: activity;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: #62626b;
+  font-size: 14px;
+  /* line-height: 1.2; */
+  /* margin-bottom: 10px; */
+  margin: 0 0 0 0;
+  padding: 0 0 9px 0;
+}
+
+.timeline-item li::before {
+  content: counter(activity, decimal-leading-zero);
+  color: #1677ff;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.timeline-title::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 90px;
+  background-image: url("assets/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* font-weight: 100; */
+  /* opacity: 0.5; */
+}
+
+
+/* ROCKET */
+
+.bg3{
+  display: relative;
+  margin-top: 0;
+  padding-top: 0;
+  /* overflow: hidden; */
+  height: 100%;
+}
+
+.bg-rocket{
+  /* top: ; */
+  z-index: 1;
+  margin-top: 1rem;;
+  display: absolute;
+  height: 1168px;
+  margin-bottom: 10px;
+  /* padding-bottom: 20px; */
+  width: 100%;
+}
+
+.bg4{
+  z-index: -2;
+  top: -15rem;
+  position: relative;
+}
+
+.bg-linear{
+  z-index: -2;
+  display: absolute;
+  height: 80rem;
+  margin-bottom: 10px;
+  /* padding-bottom: 20px; */
+  width: 100%;
+}
+
+footer{
+width: 100%;
+height: 40rem;
+position: relative;
+margin-top: -41rem;
+}
+
+.footer{
+  z-index: -5;
+  position: absolute;
+  top: -3rem;
+  width: 100%;
+  height: 50rem;
+  background-color: #1D1534;
 }
