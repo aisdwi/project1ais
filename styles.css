@@ -28,6 +28,7 @@
     min-height: 100vh;
     width: 100vw;
     max-width: 1440px;
+    justify-content: center;
     margin: 0;
     font-family: "Azo.Sans", sans-serif;
     font-size: 16px;
@@ -154,6 +155,42 @@
     top: 480px;
   }
 
+    .bg3 {
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    /* overflow: hidden; */
+    height: 50rem;
+  }
+
+  .bg-rocket {
+    /* top: ; */
+    z-index: -6;
+    margin-top: 1rem;
+    position: absolute;
+    height: 73rem;
+    margin-bottom: 10px;
+    /* padding-bottom: 20px; */
+    width: 100%;
+
+  }
+
+  .bg4 {
+    z-index: -8;
+    margin-top: -5rem;
+    position: relative;
+    height: 50rem;
+  }
+
+  .bg-linear {
+    z-index: -8;
+    position: absolute;
+    height: 80rem;
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 20px; */
+    width: 100%;
+  }
+
 
   /* HERO */
 
@@ -230,11 +267,12 @@
     letter-spacing: 0.5px;
   }
 
+  /* FOR  */
   .for {
     display: flex;
     justify-content: center;
     padding: 0px 100px;
-    gap: -42px;
+    overflow: hidden;
   }
 
   .creator,
@@ -246,7 +284,6 @@
     margin: auto 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 40px 10px 0 10px;
     height: 700px;
@@ -309,7 +346,7 @@
     line-height: 1.37;
   }
 
-  /* different section */
+  /* DIFFERENT */
   .different {
     display: flex;
     justify-content: center;
@@ -421,9 +458,7 @@
   }
 
   .timeline-item ol {
-    /* margin-top: 100px; */
     margin: 95px 0 0 0;
-    /* gap: 12px; */
     padding: 0 0 0 0;
   }
 
@@ -460,62 +495,6 @@
     background-position: center;
     /* font-weight: 100; */
     /* opacity: 0.5; */
-  }
-
-
-  /* BACKGROUND */
-
-  .bg3 {
-    position: relative;
-    margin-top: 0;
-    padding-top: 0;
-    /* overflow: hidden; */
-    height: 50rem;
-  }
-
-  .bg-rocket {
-    /* top: ; */
-    z-index: -6;
-    margin-top: 1rem;
-    ;
-    position: absolute;
-    height: 73rem;
-    margin-bottom: 10px;
-    /* padding-bottom: 20px; */
-    width: 100%;
-
-  }
-
-  .bg4 {
-    z-index: -8;
-    margin-top: -5rem;
-    position: relative;
-    height: 50rem;
-  }
-
-  .bg-linear {
-    z-index: -8;
-    position: absolute;
-    height: 80rem;
-    /* margin-bottom: 10px; */
-    /* padding-bottom: 20px; */
-    width: 100%;
-  }
-
-  footer {
-    width: 100%;
-    height: 40rem;
-    /* position: relative; */
-    /* margin-top: -41rem; */
-  }
-
-  .footer {
-    z-index: -10;
-    position: absolute;
-    /* margin-top: -3rem; */
-    width: 100%;
-    height: 50rem;
-    background-color: #1D1534;
   }
 
   /* ROCKET */
@@ -589,49 +568,232 @@
   right: 6rem;
 }
 
-.bg4 {
-    z-index: -8;
-    margin-top: -5rem;
-    position: relative;
-    height: 50rem;
-  }
-
-  .bg-linear {
-    z-index: -8;
-    position: absolute;
-    height: 80rem;
-    /* margin-bottom: 10px; */
-    /* padding-bottom: 20px; */
-    width: 100%;
-  }
+  /* PRESALE */
 
   .presale{
-    /* display: flex; */
     position: relative;
     width: 100%;
     justify-content: center;
     height: 52.5rem;
     padding: 0 5rem;
-    gap: 5rem;
     margin-top: -35rem;
+    bottom: 0;
   }
 
   .presale-item{
     display: flex;
-    justify-content: space-around;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+    height: 65%;
   }
 
   .presale h2{
+    margin-top: 2rem;
     color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: 2rem;
   }
 
-  .phase1, .phase2, .phase3{
-    background-color: rgba(245, 245, 245, 0.97);
+  .phase{
+    background-color: rgba(250, 250, 250);
+    width: 30%;
+    border-radius: 5%;
+    height: 81%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .phase2{
+    margin-top: 4%;;
+  }
+
+  .phase3 img{
+    width: 15rem;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 8rem;
+    right: 12.5rem;
+  }
+
+  .phase2 img{
+    width: 15rem;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 10.8rem;
+    right: 37.5rem;
+  }
+
+  .phase1 img{
+    width: 15rem;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 8rem;
+    left: 12.5rem;
+  }
+
+  .phase h2{
+    color: #191B21;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 550;
+  }
+
+  .phase span{
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+
+  .phase p{
+    font-size: 0.75rem;
+    margin: 10px 0 0 0;
+    color: #191B21;
+  }
+
+  .phase h5{
+    margin: 3rem 0 5px 0;
+    letter-spacing: 1px;
+  }
+
+  .pmi1{
+    position: absolute;
+    height: 39%;
+    object-fit: contain;
+    left: 25.5rem;
+    top: 17.3rem;
+    transform: scaleX(-1);
+  }
+  .pmi2{
+    position: absolute;
+    height: 41%;
+    object-fit: contain;
+    right: 25.5rem;
+    top: 16.3rem;
+    /* transform: scaleX(-1); */
+  }
+
+  .htb{
+    color: white;
+    text-align: center;
+    margin-top: -0.5rem;
+  }
+
+  .htb h3{
+    font-size: 1.65rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+
+  .htb p{
+    font-size: 12px;
+    margin: 35px 0;
+    position: relative;
+  }
+
+  .arrow::after{
+    content:"";
+    top: 25px;
+    left: 40rem;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: rotate(45deg);
   }
 
   footer {
     width: 100%;
-    height: 40rem;
+    /* height: 25rem; */
     /* position: relative; */
-    /* margin-top: -41rem; */
+    margin-top: -1rem;
+    
   }
+
+  .footer {
+    z-index: -99;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: end;
+    position: absolute;
+    /* margin-top: -3rem; */
+    width: 100%;
+    height: 33rem;
+    background-color: #1D1534;
+    flex-wrap: wrap;
+  }
+
+  footer .logo{
+    width: 12%;
+    margin: 0;
+  }
+
+  .footer1{
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    gap: 3rem;
+    margin-bottom: 6%;
+    /* margin-top: 2rem; */
+  }
+
+  .footer2{
+    display: flex;
+    justify-content: center;
+    gap: 16rem;
+    width: 100%;
+    align-items: start;
+    padding: 0 15px;
+    margin: 0 7rem 7.5rem 7rem;
+  }
+
+  .footer1 p{
+    color: white;
+    margin: 0;
+    opacity: 0.2;
+  }
+
+  .footer1 a{
+    color: white;
+    font-size: 12px;
+    font-weight: 550;
+  }
+
+  .sosmed-item{
+    display: flex;
+    gap: 11px;
+    width: 25%;
+    justify-content: center;
+  }
+
+  .sosmed-item a{
+    /* background-color: white; */
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 7px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright p{
+    margin: 5px 0;
+    color: white;
+    font-size: 10px;
+  }
+
+  .copyright img{
+    /* margin: 0; */
+    margin: 0 0 0 auto;
+    width: 6rem;
+  }
+
