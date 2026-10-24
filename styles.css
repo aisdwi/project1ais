@@ -39,7 +39,7 @@ body {
   max-width: 1440px;
   justify-content: center;
   margin: 0;
-  font-family: "Azo.Sans", sans-serif;
+  font-family: "AzoLight", sans-serif;
   font-size: 16px;
   background-color: #F7F5F9;
   /* overflow: hidden; */
@@ -50,19 +50,19 @@ body {
 .navbar li {
   text-transform: uppercase;
   /* margin-right: 2px; */
-  font-size: 0.64rem;
+  font-size: 0.61rem;
+  font-family: "AzoLight";
   list-style-type: none;
-  /* font-weight: 550; */
+  font-weight: 500;
   text-shadow: -0.1px -0.1px 0.1px #fff, -0.1px 0.1px 0.1px #fff, 0.1px -0.1px 0.1px #fff, 0.1px -0.1px 0.1px #fff;
 }
 
 .navbar li a {
   display: inline-block;
-  transform: scaleX(1.2);
   transform: scaleY(0.95);
   color: white;
   text-decoration: none;
-  letter-spacing: 1;
+  letter-spacing: 0.3px;
 }
 
 .navbar li a::after {
@@ -70,9 +70,8 @@ body {
   display: block;
   margin: 0 auto;
   width: 100%;
-  height: 0.5px;
+  height: 0.1px;
   background-color: white;
-  margin-top: 0;
 }
 
 header {
@@ -111,6 +110,8 @@ header {
 }
 
 .regist .btn {
+  font-family: "azobold";
+  /* font-weight: 900; */
   border-radius: 52px;
   margin: -10px 10px 0 10px;
   padding: 12px 32px;
@@ -118,7 +119,7 @@ header {
   text-decoration: none;
   /* border: 2px solid black; */
   background-color: #ffffff;
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 11px;
 }
 
@@ -256,47 +257,48 @@ header {
 }
 
 .hero-text h5 {
+  font-family: "AzoLight";
   color: var(--font-blue);
   margin-bottom: 5px;
-  font-weight: 500;
-  text-shadow: 0 0 0.7px var(--font-blue), 0 0 0.7px var(--font-blue);
+  font-weight: 800;
+  text-shadow: 0 0 0.2px var(--font-blue), 0 0 0.2px var(--font-blue);
   /* transform: scaleX(1.05); */
-  transform: scaleY(1);
   margin-top: -5px;
-  font-size: 0.815rem;
+  font-size: 0.75rem;
   opacity: 0.9;
   letter-spacing: 0.7px;
 }
 
 .hero-text h1 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin-top: 8px;
   margin-left: -1px;
   margin-right: 2px;
   padding-top: 7px;
-  padding-right: 20px;
+  padding-right: 10px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 800;
+  line-height: 1.2;
   text-shadow:
-    -0.4px -0.4px 0.1px #000,
-    0.3px -0.3px 0.1px #000,
-    -0.4px 0.4px 0.1px #000,
-    0.3px 0.3px 0.1px #000;
-  /* transform: scaleX(0.98); */
+    -0.4px -0.4px 0.4px #000,
+    0.3px -0.3px 0.3px #000,
+    -0.4px 0.4px 0.4px #000,
+    0.3px 0.3px 0.3px #000; 
+  /* transform: scaleX(0.98);
   text-align: start;
   /* transform: scaleY(1.05); */
 }
 
 .hero-text p {
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   margin-top: 10px;
   color: var(--font-color);
   letter-spacing: 0.4px;
   width: 95%;
   margin-left: -1px;
   line-height: 1.5;
-  opacity: 0.4;
+  opacity: 0.5;
   font-weight: 100;
 }
 
