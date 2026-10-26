@@ -708,7 +708,7 @@ header {
 }
 
 .phase3 img {
-  width: 15rem;
+  width: 13rem;
   /* margin: 0 auto; */
   position: absolute;
   top: 8rem;
@@ -716,7 +716,7 @@ header {
 }
 
 .phase2 img {
-  width: 15rem;
+  width: 13rem;
   /* margin: 0 auto; */
   position: absolute;
   top: 10.8rem;
@@ -724,7 +724,7 @@ header {
 }
 
 .phase1 img {
-  width: 15rem;
+  width: 13rem;
   /* margin: 0 auto; */
   position: absolute;
   top: 8rem;
@@ -761,6 +761,12 @@ header {
   color: var(--font-color);
 }
 
+.phase p span{
+  font-size: 0.7rem;
+  margin: 10px 0 0 0;
+  color: var(--font-color);
+}
+
 .phase h5 {
   margin: 3rem 0 5px 0;
   letter-spacing: 1px;
@@ -769,8 +775,8 @@ header {
 .pmi1 {
   position: absolute;
   height: 39%;
-  left: 25.5rem;
-  top: 17.3rem;
+  left: 25.2rem;
+  top: 16.5rem;
   transform: scaleX(-1);
 }
 
@@ -778,7 +784,7 @@ header {
   position: absolute;
   height: 41%;
   right: 25.5rem;
-  top: 16.3rem;
+  top: 16rem;
   /* transform: scaleX(-1); */
 }
 
@@ -844,9 +850,9 @@ footer .logo {
   display: flex;
   justify-content: center;
   /* width: 100%; */
-  gap: 3rem;
-  margin-bottom: 6%;
-  /* margin-top: 2rem; */
+  gap: 3.2rem;
+  margin-bottom: 6rem;
+  margin-top: -10px;
 }
 
 .footer2 {
@@ -863,13 +869,20 @@ footer .logo {
   color: white;
   margin: 0;
   opacity: 0.2;
+  font-size: 12px;
 }
 
 .footer1 a {
   color: white;
-  font-size: 12px;
+  font-size: 11.5px;
   text-decoration: none;
   font-weight: 800;
+  margin: 0;
+  text-shadow:
+    -0.2px -0.2px 0.2px ,
+    0.2px -0.2px 0.2px ,
+    -0.2px 0.2px 0.2px ,
+    0.2px 0.2px 0.2px ; 
 }
 
 .footer1 a::after {
